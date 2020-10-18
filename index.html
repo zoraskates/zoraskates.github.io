@@ -11,17 +11,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="node_modules/fullpage.js/dist/fullpage.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="node_modules/animate.css/animate.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="build/css/app.min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/nfy5lai.css" />
   </head>
   <body data-scrollbar>
@@ -88,8 +78,11 @@
               <h3>80mm 85A 8 Pack</h3>
             </div>
             <div class="product__desc">
-              <p>
-                Whether you are an urban street skating fanatic, need inline roller hockey skate wheels, are dusting off
+              <p>These durable 80mm
+                wheels for inline skating measure 85A durometer hardness for increased grip, long-lasting stability, and
+                everyday use. FLUX wheels provide peak performance on rough and uneven ground such as sidewalks,
+                asphalt outdoor trails, concrete or pavement, and ride smoothly indoors for roller hockey.
+                <!-- Whether you are an urban street skating fanatic, need inline roller hockey skate wheels, are dusting off
 your inline skates, or are new to inline skating, FLUX wheels have got you covered! These durable 80mm
 wheels for inline skating measure 85A durometer hardness for increased grip, long-lasting stability, and
 everyday use. FLUX wheels provide peak performance on rough and uneven ground such as sidewalks,
@@ -97,7 +90,7 @@ asphalt outdoor trails, concrete or pavement, and ride smoothly indoors for roll
 durometer replacement inline skate wheels are high quality without the high price of other roller blade
 replacement wheels! These 80 millimeter wheels fit most inline skates, and also work with RipStik
 caster boards or roller hockey skates. Bearings not included. For best results, rotate wheels regularly for
-even wear.
+even wear. -->
               </p>
               <!-- <a href="/" class="btn">Buy on Amazon</a> -->
             </div>
@@ -109,8 +102,10 @@ even wear.
               <h3>76mm 85A 2 Pack</h3>
             </div>
             <div class="product__desc">
-              <p>
-                Whether you are an urban street skating fanatic, upgrading your roller hockey skate wheels for fitness,
+              <p>If you ride your caster board to work, school, or the skate park, these FLUX replacement
+                wheels are the perfect fit! Durable 76mm wheels for inline skating or caster boards measure 85A
+                durometer hardness for speed, stability, and long-lasting use without the need to replace often.
+                <!-- Whether you are an urban street skating fanatic, upgrading your roller hockey skate wheels for fitness,
 or are dusting off your inline skates for recreation, FLUX replacement inline skate wheels have got you
 covered! If you ride your caster board to work, school, or the skate park, these FLUX replacement
 wheels are the perfect fit! Durable 76mm wheels for inline skating or caster boards measure 85A
@@ -119,7 +114,7 @@ inline wheels work for skateparks, outdoor paved trails, sidewalks, asphalt, con
 indoor tracks! 85A Durometer FLUX wheels are high performance without the high price of other roller
 blade replacement wheels. These 76 millimeter wheels fit most caster boards as well as inline skates or
 roller hockey skates. Bearings included for full replacement. Will not fit RipStik Ripster mini. For best
-results, rotate wheels regularly for even wear.
+results, rotate wheels regularly for even wear. -->
               </p>
               <!-- <a href="/" class="btn">Buy on Amazon</a> -->
             </div>
@@ -144,40 +139,6 @@ results, rotate wheels regularly for even wear.
         </div>
       </section>
     </section>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
-    <script src="node_modules/fullpage.js/dist/fullpage.extensions.min.js"></script>
-    <script>
-      // Fullpage
-      $(document).ready(function () {
-        $("#fullpage").fullpage({
-          menu: "#menu",
-          anchors: ["intro", "about", "products", "contact"],
-          autoScrolling: true,
-          scrollHorizontally: true,
-          responsiveWidth: 1000,
-          afterLoad: function (origin) {
-            $(".intro").addClass("animate__fadeIn");
-          },
-          onLeave: function (origin, index) {
-            if ($(window).width() > 1000) {
-              if (origin.index === 0) {
-                $(".about").addClass("animate__fadeIn");
-              }
-              if (origin.index === 1) {
-                $(".products").addClass("animate__fadeIn");
-              }
-              if (origin.index === 2) {
-                $(".contact").addClass("animate__fadeIn");
-              }
-            }
-          },
-        });
-        // Intro section down arrow
-        $(".arrowDown").click(function () {
-          $.fn.fullpage.moveSectionDown();
-        });
-      });
-    </script>
+    <script src="build/js/app.min.js"></script>
   </body>
 </html>
