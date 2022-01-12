@@ -321,8 +321,7 @@ ul {
 
 @media (max-width: 1600px) {
   .products {
-    padding: 4rem;
-    grid-row-gap: 100px; } }
+    padding: 2rem 4rem; } }
 
 @media (max-width: 1200px) {
   .products {
@@ -331,6 +330,11 @@ ul {
     grid-template-areas: 'header' 'flux-2-80-be' 'flux-2-76' 'flux-2-80';
     grid-row-gap: 0;
     padding: 5rem 0; } }
+
+@media (max-height: 700px) {
+  .products {
+    grid-template-rows: 27% 73%;
+    grid-row-gap: 10px; } }
 
 .products .product {
   position: relative; }
