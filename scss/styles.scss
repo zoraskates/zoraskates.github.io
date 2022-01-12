@@ -411,6 +411,11 @@ ul {
     padding: 2rem 4rem;
   }
 
+  @media (max-width: 1920px) and (max-height: 700px) {
+    grid-template-rows: 27% 73%;
+    grid-row-gap: 10px;
+  }
+
   @media (max-width: 1200px) {
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -421,11 +426,6 @@ ul {
       'flux-2-80';
     grid-row-gap: 0;
     padding: 5rem 0;
-  }
-
-  @media (max-width: 1920px) and (max-height: 700px) {
-    grid-template-rows: 27% 73%;
-    grid-row-gap: 10px;
   }
 
   .product {
