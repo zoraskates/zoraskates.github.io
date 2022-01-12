@@ -25,7 +25,7 @@ gulp.task('js-copy', function () {
     .pipe(gulp.dest('js'));
 });
 
-gulp.task('sass', async function () {
+gulp.task('sass', function () {
   return gulp
     .src('./scss/*.scss')
     .pipe(sass())
@@ -33,7 +33,7 @@ gulp.task('sass', async function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('js', async function () {
+gulp.task('js', function () {
   return gulp
     .src('js/*.js')
     .pipe(order(['jquery.js', 'fullpage.extensions.min.js', 'main.js']))
@@ -42,7 +42,7 @@ gulp.task('js', async function () {
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('css', async function () {
+gulp.task('css', function () {
   return gulp
     .src('css/*.css')
     .pipe(order(['animate.css', 'fullpage.css', 'styles.css']))

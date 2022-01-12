@@ -361,12 +361,11 @@ ul {
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 22% 39% 39%;
+  grid-template-rows: 40% 60%;
   grid-row-gap: 40px;
   grid-column-gap: 40px;
   grid-template-areas:
     'header header header'
-    'flux-1-80 flux-1-76 spacer'
     'flux-2-80-be flux-2-76 flux-2-80';
   padding: 0 10rem;
 
@@ -435,8 +434,6 @@ ul {
     grid-template-rows: auto;
     grid-template-areas:
       'header'
-      'flux-1-80'
-      'flux-1-76'
       'flux-2-80-be'
       'flux-2-76'
       'flux-2-80';
@@ -499,17 +496,17 @@ ul {
     }
 
     @media (min-width: 1200px) {
-      &:nth-child(4) {
-        grid-row-start: 3;
-      }
+      // &:nth-child(4) {
+      //   grid-row-start: 3;
+      // }
 
-      &:nth-child(5) {
-        grid-row: 3;
-      }
+      // &:nth-child(5) {
+      //   grid-row: 3;
+      // }
 
-      &:nth-child(6) {
-        grid-row: 3;
-      }
+      // &:nth-child(6) {
+      //   grid-row: 3;
+      // }
     }
 
     @media (max-width: 1600px) {

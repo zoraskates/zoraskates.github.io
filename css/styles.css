@@ -290,10 +290,10 @@ ul {
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 22% 39% 39%;
+  grid-template-rows: 40% 60%;
   grid-row-gap: 40px;
   grid-column-gap: 40px;
-  grid-template-areas: 'header header header' 'flux-1-80 flux-1-76 spacer' 'flux-2-80-be flux-2-76 flux-2-80';
+  grid-template-areas: 'header header header' 'flux-2-80-be flux-2-76 flux-2-80';
   padding: 0 10rem; }
 
 .products__header h2 {
@@ -328,7 +328,7 @@ ul {
   .products {
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: 'header' 'flux-1-80' 'flux-1-76' 'flux-2-80-be' 'flux-2-76' 'flux-2-80';
+    grid-template-areas: 'header' 'flux-2-80-be' 'flux-2-76' 'flux-2-80';
     grid-row-gap: 0;
     padding: 5rem 0; } }
 
@@ -377,14 +377,6 @@ ul {
 @media (min-width: 1920px) {
   .products .product {
     padding: 1rem; } }
-
-@media (min-width: 1200px) {
-  .products .product:nth-child(4) {
-    grid-row-start: 3; }
-  .products .product:nth-child(5) {
-    grid-row: 3; }
-  .products .product:nth-child(6) {
-    grid-row: 3; } }
 
 @media (max-width: 1600px) {
   .products .product__desc {
