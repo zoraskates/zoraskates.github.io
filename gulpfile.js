@@ -1,11 +1,9 @@
 var gulp = require('gulp'),
-  sass = require('gulp-sass'),
+  sass = require('gulp-sass')(require('sass')),
   cleanCSS = require('gulp-clean-css'),
   terser = require('gulp-terser'),
   order = require('gulp-order'),
   concat = require('gulp-concat');
-
-sass.compiler = require('node-sass');
 
 gulp.task('css-copy', function () {
   return gulp
